@@ -90,6 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   senstivityX: 5
   senstivityY: 2
+  touchPadState: 0
   onGameStart:
     m_PersistentCalls:
       m_Calls: []
@@ -193,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -737,6 +739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -805,12 +808,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls: []
+  buttonState: 0
 --- !u!1 &7353529703973084492
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -987,9 +989,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls:
@@ -1005,6 +1004,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonState: 0
 --- !u!1 &7353529704003971381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,6 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1356,6 +1357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1424,12 +1426,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls: []
+  buttonState: 0
 --- !u!1 &7353529704438955570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1867,9 +1868,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls:
@@ -1885,6 +1883,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonState: 0
 --- !u!1 &7353529705084859297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2156,12 +2156,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls: []
+  buttonState: 0
 --- !u!1 &7353529705530527104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,6 +2213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2359,6 +2358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2427,9 +2427,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls:
@@ -2445,6 +2442,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonState: 0
 --- !u!1 &7602777178729365238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,7 +2555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.47750002, y: 1}
-  m_AnchoredPosition: {x: -1.8800049, y: -28}
+  m_AnchoredPosition: {x: -103, y: -100}
   m_SizeDelta: {x: -3.7572327, y: -56.00009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7602777179957123837
@@ -2613,6 +2611,9 @@ MonoBehaviour:
   joystickBackground: {fileID: 7602777178729365239}
   joyStick: {fileID: 7602777180130774680}
   joystickMovementRange: 1
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 1, g: 1, b: 1, a: 1}
+  joystickState: 0
   onGameStart:
     m_PersistentCalls:
       m_Calls: []
@@ -2793,6 +2794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2876,9 +2878,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  onButtonSelected:
-    m_PersistentCalls:
-      m_Calls: []
   onButtonup:
     m_PersistentCalls:
       m_Calls:
@@ -2894,6 +2893,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonState: 0
 --- !u!1 &8982259974386897528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3079,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!1 &9209846400508017886
 GameObject:
   m_ObjectHideFlags: 0
