@@ -7,42 +7,24 @@ using UnityEngine.UI;
 public class PlayerTouchController : MonoBehaviour
 {
     public Animator _animator;
-    Vector2 horizontalMovementVector;
-    Vector2 verticalMovementVector;
 
-    float horizontalAxisInput;
+  float horizontalAxisInput;
     float verticalAxisInput;
 
-    public VariableJoystick joystick;
-
-    //public Button jumpButton;
+    public VariableJoystick movementJoystick;
 
     public List<AnimationClip> attackAnimClips;
     public AnimationState attackState;
+
+ 
     
-    // Start is called before the first frame update
-    void Start()
-    {
-      //  _animator = GetComponent<Animator>();
-    }
 
     // Update is called once per frame
     void Update()
     {
+        horizontalAxisInput = movementJoystick.Horizontal;        
+        verticalAxisInput = movementJoystick.Vertical;
         
-       /* verticalAxisInput = Input.GetAxis("Vertical");
-        horizontalAxisInput = Input.GetAxis("Horizontal");*/
-
-        horizontalAxisInput = joystick.Horizontal;
-        Debug.Log(horizontalAxisInput);
-
-        verticalAxisInput = joystick.Vertical;
-        Debug.Log(verticalAxisInput);
-
-        
-
-       /* _animator.SetFloat("vertical", verticalAxisInput);       
-        _animator.SetFloat("horizontal", horizontalAxisInput);*/
        if(verticalAxisInput == 0 && horizontalAxisInput==0)
         {
             _animator.SetFloat("vertical", 0);
@@ -55,6 +37,7 @@ public class PlayerTouchController : MonoBehaviour
             _animator.SetFloat("horizontal", horizontalAxisInput);
         }
 
+        //LookAt();
 
        
        //Legacy code
@@ -162,10 +145,42 @@ public class PlayerTouchController : MonoBehaviour
     public void OnClickAttack()
     {
         _animator.SetInteger("attack index",Random.Range(0,3));
-        _animator.SetTrigger("attack");
-      /*  _animator.SetInteger("Attack", Random.Range(0, 2));
-        _animator.
-        */
+        _animator.SetTrigger("attack");   
+    }
+
+
+    public void LookAt()
+    {
+        //currentPlayerRotation += new Quaternion.
+        //Vector3.Lerp(transform.forward, targetVector);
+       // transform.eulerAngles = new Vector3(targetVector.x, targetVector.y, targetVector.z);
+        //transform.eulerAngles = new Vector3(targetVector.x, targetVector.y, targetVector.z);
+        //transform.eulerAngles = new Vector3(0, lookJoystick.Horizontal*100 + lookJoystick.Vertical*100, 0);
+       //transform.eulerAngles = new Vector3(0, -movementJoystick.Horizontal * 100-movementJoystick.Vertical * 100,0);
+
+       /* if(movementJoystick.Vertical > 0)
+        {
+            transform.eulerAngles = new Vector3(0,  0, 0);
+        }
+        if(movementJoystick.Vertical<0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+
+        if(movementJoystick.Horizontal>0)
+        {
+            transform.eulerAngles = new Vector3(0, 90, 0);
+        }
+        if(movementJoystick.Horizontal<0)
+        {
+            transform.eulerAngles = new Vector3(0, 270, 0);
+        }*/
+      //  transform.rotation = Quaternion.Lerp(transform.rotation, new Quaternion    ,new Quaternion.Euler( transform.rotation.x,90f, transform.rotation.z));
+
+       
+
+        //    transform.forward.Lerp(transform.forward, targetVector);
+        //Mathf.LerpRotation(transform.forward, targetVector, 1.2f);
     }
 
 }
