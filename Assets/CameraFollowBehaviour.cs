@@ -17,6 +17,7 @@ public class CameraFollowBehaviour : MonoBehaviour
 
     public void CameraLookToJoystickInput()
     {
-        transform.rotation =  Quaternion.Euler(new Vector3(transform.rotation.x, (cameraLookJoystick.Horizontal+cameraLookJoystick.Vertical)*180, transform.rotation.z));
+        //transform.rotation =  Quaternion.Euler(new Vector3(transform.rotation.x, (cameraLookJoystick.Horizontal+cameraLookJoystick.Vertical)*180, transform.rotation.z));
+        transform.rotation =  Quaternion.Euler(new Vector3(-(cameraLookJoystick.Vertical) * 60, (cameraLookJoystick.Horizontal)*180, transform.rotation.z));
     }
 }
